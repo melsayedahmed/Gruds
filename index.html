@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUDS</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="continer">
+        <div class="text-prodactat">
+            <input type="text" class="title" placeholder="title" />
+        </div>
+        <div class="price-taxes-ads-total">
+            <input class="price" type="number" placeholder="price" min="0" />
+            <input class="texes" type="number" placeholder="texes" min="0" />
+            <input class="ads" type="number" placeholder="ads" min="0" />
+            <input class="discount" type="number" placeholder="discount" min="0" />
+            <button class="total">total : <span class="totla-span"></span></button>
+        </div>
+        <div class="count-div">
+            <input type="number" placeholder="count" class="count" min="0" />
+        </div>
+        <div class="category-div">
+            <input type="text" placeholder="category" class="category" />
+        </div>
+        <button class="creat">create</button>
+    </div>
+    <div class="continer-search">
+        <input type="text" class="search" placeholder="search" />
+        <div class="button-search">
+            <button onclick="getsearchmood(this.className)" class="search-title">
+          Search by title
+        </button>
+            <button onclick="getsearchmood(this.className)" class="search-calgary">
+          Search by calgary
+        </button>
+        </div>
+        <div class="add-delete-button">
+            <!-- <button class="delet-all">Delete All</button> -->
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>price</th>
+                    <th>taxes</th>
+                    <th>ads</th>
+                    <th>category</th>
+                    <th>totoal</th>
+                    <th class="update-td">update</th>
+                    <th class="delete-td">delete</th>
+                </tr>
+                <tbody>
+                    <!-- <tr>
+              <td>1</td>
+              <td>samsong</td>
+              <td>2000</td>
+              <td>100</td>
+              <td>1002</td>
+              <td>phone</td>
+              <td>1002</td>
+              <td><button class="update">update</button></td>
+              <td><button class="delete">delete</button></td>
+            </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

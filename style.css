@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --main-color: #0c162d;
+    --scend-color: #19253e;
+    --third-color: #303d56;
+    --four-color: rgb(58, 184, 146);
+    --wight-color: #ffffff;
+}
+
+::selection {
+    background-color: rgba(58, 184, 146, 0.473);
+}
+
+body {
+    background-color: #040d21;
+    color: var(--wight-color);
+}
+
+.continer {
+    width: 90%;
+    margin: 100px auto;
+    background-color: var(--main-color);
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.219);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* input */
+
+input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    background-color: var(--scend-color);
+    color: var(--wight-color);
+    margin: 5px 0;
+    box-shadow: 6px 7px 11px 0px #4a70e11f;
+    border: 1px solid #ffffff17;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input:focus {
+    background-color: var(--third-color);
+}
+
+/* button */
+
+button {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: var(--four-color);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 7px 0px rgb(58 184 146);
+    /* height: 34px; */
+    user-select: none;
+}
+
+button:active {
+    background-color: rgb(40, 148, 115);
+}
+
+button {
+    transition: 0.5s;
+}
+
+
+/* ---------------------------------------------------------------- */
+
+.price-taxes-ads-total {
+    display: flex;
+    align-items: center;
+}
+
+.price-taxes-ads-total input {
+    margin: 5px;
+}
+
+.price-taxes-ads-total input:first-child {
+    margin-left: 0;
+}
+
+.price-taxes-ads-total button {
+    padding: 5px 10px;
+    width: 80% !important;
+}
+
+.creat {
+    margin-top: 7px;
+}
+
+/* continer-search */
+
+.continer-search {
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--main-color);
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.219);
+    position: relative;
+}
+
+.button-search {
+    display: flex;
+}
+
+.button-search button {
+    margin: 7px;
+}
+
+.button-search button:first-child {
+    margin-left: 0;
+}
+
+.button-search button:last-child {
+    margin-right: 0;
+}
+
+.delet-all {
+    background-color: rgb(216, 63, 63);
+    box-shadow: 0px 0px 7px 0px rgb(216, 63, 63);
+    margin-bottom: 10px;
+}
+
+.delet-all:active {
+    background-color: rgb(175, 37, 37);
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    text-align: center;
+    background-color: var(--third-color);
+    text-transform: uppercase;
+}
+
+td {
+    text-transform: capitalize;
+}
+
+.delete {
+    background-color: rgb(216, 63, 63) !important;
+    box-shadow: 0px 0px 7px 0px rgb(216 63 63) !important;
+    border-radius: 0;
+}
+
+.delete:active {
+    background-color: rgb(165, 36, 36);
+}
+
+.update {
+    border-radius: 0;
+}
+
+.update-td {
+    background-color: rgba(40, 148, 116, 0.397);
+}
+
+.delete-td {
+    background-color: rgba(165, 36, 36, 0.336);
+}
+
+.delet-all.active {
+    display: block;
+}
+
+.delet-all.display {
+    display: none;
+}
